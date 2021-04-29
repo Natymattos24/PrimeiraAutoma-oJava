@@ -1,0 +1,24 @@
+# PrimeiraAutoma-oJava
+Primeira Automação de testes com Java
+
+
+package Testes;
+
+ import numeros2.Numeros2;
+import org.junit.Assert;
+import org.junit.Test;
+
+public class NumerosTeste2 {
+    @Test
+    public void ValidarSeUmNumeroEUmDecimal() {
+        // Vou utilizar o metodo eUmDecimal2 passando o valor 12, que tras-se de um decimal.
+        Numeros2 numeros2 = new Numeros2();
+
+        boolean eUDecimal  = numeros2.eUmDecimal(12);
+
+        // Vou validar que a resposta é verdadeira
+        Assert.assertTrue(eUDecimal);
+
+    }
+
+}
